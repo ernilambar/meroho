@@ -28,4 +28,13 @@
   border-radius: 10px;
   padding: 10px 15px;
   color: #305B90;
+  margin-block: 30px;
+}
+
+.App-social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  list-style-type: none;
 }
