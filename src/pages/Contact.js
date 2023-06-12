@@ -4,15 +4,15 @@ import Footer from '../components/Footer';
 import PageHeader from '../components/PageHeader';
 
 const Contact = () => {
-  return (
-    <div className='contact'>
-      <Container>
-        <Header />
-          <PageHeader title="Contact" />
-        <Footer />
-      </Container>
-    </div>
-  );
+	return (
+		<div className="contact">
+			<Container>
+				<Header />
+				<PageHeader title="Contact" />
+				<Footer />
+			</Container>
+		</div>
+	);
 };
 
 export default Contact;

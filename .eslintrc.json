@@ -1,0 +1,24 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": ["plugin:@wordpress/eslint-plugin/recommended"],
+  "parserOptions": {
+    "requireConfigFile": false
+  },
+  "settings": {
+    "react": {
+      "version": "18"
+    }
+  },
+  "globals": {
+    "wp": true,
+    "jQuery": true
+  },
+  "rules": {
+    "no-console": "error",
+    "no-alert": "error",
+    "react/no-unknown-property": "off"
+  }
+}
