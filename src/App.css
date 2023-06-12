@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   height: 100vh;
 }
 
@@ -19,4 +20,12 @@
   width: 200px;
   height: 200px;
   border-radius: 100px;
+}
+
+.App-bio {
+  background-color: #eeeeee;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: #305B90;
 }
