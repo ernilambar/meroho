@@ -49,6 +49,7 @@
     "@wordpress/eslint-plugin": "^14.8.0",
     "eslint": "^8.42.0",
     "prettier": "^2.8.8",
-    "react-router-dom": "^6.12.1"
+    "react-router-dom": "^6.12.1",
+    "sass": "^1.63.3"
   }
 }
