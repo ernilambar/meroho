@@ -1,13 +1,17 @@
-import avatar from './../images/avatar.png';
+import React from 'react';
+
+import Container from './Container';
+
+import Navigation from './Navigation';
 
 const Header = () => {
-  return (
-    <header className='App-header'>
-      <img src={avatar} className="App-avatar" alt="avatar" />
-      <h1>Nilambar Sharma</h1>
-      <p>Since 1985</p>
-    </header>
-  );
-}
+	return (
+		<header className="header">
+			<Container>
+				<Navigation />
+			</Container>
+		</header>
+	);
+};
 
 export default Header;

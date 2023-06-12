@@ -1,40 +1,74 @@
-.App {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
+.navigation {
+  padding-block: 20px;
 }
 
-.App-header h1 {
-  color: #ffffff;
+.navigation ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.navigation ul li {
+  color: #fff;
+}
+
+.navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation ul li a:hover {
+  text-decoration: underline;
+}
+
+.branding {
+  text-align: center;
+}
+
+.branding h1 {
   text-transform: uppercase;
 }
 
-.App-header p {
-  color: #ffffff;
-}
-
-.App-header img {
+.branding img {
   width: 200px;
   height: 200px;
   border-radius: 100px;
 }
 
-.App-bio {
-  background-color: #eeeeee;
+.bio {
   max-width: 600px;
+  margin: 0 auto;
+}
+
+.bio-inner {
+  display: flex;
+  justify-content: center;
+  background-color: #eeeeee;
   border-radius: 10px;
   padding: 10px 15px;
   color: #305B90;
   margin-block: 30px;
 }
 
-.App-social ul {
+.social ul {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   list-style-type: none;
+}
+
+.footer {
+  margin-block: 40px 20px;
+  text-align: center;
+}
+
+/** Home **/
+.home {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

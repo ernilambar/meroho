@@ -1,6 +1,8 @@
-import Header from './components/Header'
-import Bio from './components/Bio';
-import Social from './components/Social';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
 
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -12,11 +14,15 @@ library.add( fab, fas );
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Bio />
-      <Social />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/">
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
