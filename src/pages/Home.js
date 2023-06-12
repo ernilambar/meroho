@@ -1,20 +1,16 @@
-import Branding from './../components/Branding';
-import Bio from './../components/Bio';
-import Social from './../components/Social';
-import Container from '../components/Container';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Container from '../components/Container/Container';
+import SiteHeader from '../components/SiteHeader/SiteHeader';
+import SiteFooter from '../components/SiteFooter/SiteFooter';
+import Author from '../components/Author/Author';
 
 const Home = () => {
 	return (
 		<div className="home">
+			<SiteHeader />
 			<Container>
-				<Header />
-				<Branding />
-				<Bio />
-				<Social />
-				<Footer />
+				<Author />
 			</Container>
+			<SiteFooter />
 		</div>
 	);
 };

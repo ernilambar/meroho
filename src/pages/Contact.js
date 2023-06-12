@@ -1,16 +1,17 @@
-import Container from '../components/Container';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import PageHeader from '../components/PageHeader';
+import SiteHeader from '../components/SiteHeader/SiteHeader';
+import SiteFooter from '../components/SiteFooter/SiteFooter';
+import Container from '../components/Container/Container';
+import PageHeader from '../components/PageHeader/PageHeader';
 
 const Contact = () => {
 	return (
 		<div className="contact">
+			<SiteHeader />
+			<PageHeader title="Contact" />
 			<Container>
-				<Header />
-				<PageHeader title="Contact" />
-				<Footer />
+				<p>Contact form will be here.</p>
 			</Container>
+			<SiteFooter />
 		</div>
 	);
 };

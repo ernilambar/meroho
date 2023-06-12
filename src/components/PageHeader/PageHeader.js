@@ -1,9 +1,13 @@
 import React from 'react';
 
+import Container from './../Container/Container';
+
 const PageHeader = (props) => {
 	return (
 		<div className="page-header">
-			<h1>{props.title}</h1>
+			<Container>
+				<h1>{props.title}</h1>
+			</Container>
 		</div>
 	);
 };

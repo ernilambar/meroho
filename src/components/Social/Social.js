@@ -1,5 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import './Social.scss';
+
 const Social = () => {
 	return (
 		<div className="social">
@@ -13,7 +15,7 @@ const Social = () => {
 					>
 						<FontAwesomeIcon
 							icon="fa-globe"
-							style={{ color: '#fff' }}
+							style={{ color: '#ddd' }}
 						/>
 					</a>
 				</li>
@@ -26,7 +28,7 @@ const Social = () => {
 					>
 						<FontAwesomeIcon
 							icon="fab fa-twitter"
-							style={{ color: '#fff' }}
+							style={{ color: '#ddd' }}
 						/>
 					</a>
 				</li>
@@ -39,7 +41,7 @@ const Social = () => {
 					>
 						<FontAwesomeIcon
 							icon="fab fa-facebook"
-							style={{ color: '#fff' }}
+							style={{ color: '#ddd' }}
 						/>
 					</a>
 				</li>
@@ -52,7 +54,7 @@ const Social = () => {
 					>
 						<FontAwesomeIcon
 							icon="fab fa-linkedin"
-							style={{ color: '#fff' }}
+							style={{ color: '#ddd' }}
 						/>
 					</a>
 				</li>
@@ -65,7 +67,7 @@ const Social = () => {
 					>
 						<FontAwesomeIcon
 							icon="fab fa-instagram"
-							style={{ color: '#fff' }}
+							style={{ color: '#ddd' }}
 						/>
 					</a>
 				</li>
