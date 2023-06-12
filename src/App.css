@@ -1,10 +1,22 @@
 .App {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.App-avatar {
+.App-header h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.App-header p {
+  color: #ffffff;
+}
+
+.App-header img {
   width: 200px;
   height: 200px;
   border-radius: 100px;
-
 }
