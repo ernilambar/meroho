@@ -1,9 +1,11 @@
 import './App.css';
 
+import Header from './components/Header'
+
 function App() {
   return (
     <div className="App">
-      <h1 style={{'marginTop':'50px','color':'#333333'}}>Hello React!!!</h1>
+      <Header />
     </div>
   );
 }
