@@ -18,6 +18,10 @@
   text-decoration: none;
 }
 
+.navigation ul li a.active {
+  text-decoration: underline;
+}
+
 .navigation ul li a:hover {
   text-decoration: underline;
 }
@@ -62,6 +66,10 @@
 .footer {
   margin-block: 40px 20px;
   text-align: center;
+}
+
+.page-header {
+  text-transform: uppercase;
 }
 
 /** Home **/
