@@ -1,0 +1,23 @@
+.navigation ul {
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+	gap: 15px;
+}
+
+.navigation ul li {
+	color: #fff;
+}
+
+.navigation ul li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.navigation ul li a.active {
+	text-decoration: underline;
+}
+
+.navigation ul li a:hover {
+	text-decoration: underline;
+}

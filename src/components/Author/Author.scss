@@ -1,0 +1,30 @@
+.author {
+	.branding {
+		text-align: center;
+
+		h1 {
+			text-transform: uppercase;
+		}
+
+		img {
+			width: 200px;
+			height: 200px;
+			border-radius: 100px;
+		}
+	}
+
+	.bio {
+		max-width: 600px;
+		margin: 0 auto;
+
+		.bio-inner {
+			display: flex;
+			justify-content: center;
+			background-color: #eeeeee;
+			border-radius: 10px;
+			padding: 10px 15px;
+			color: #305b90;
+			margin-block: 30px;
+		}
+	}
+}

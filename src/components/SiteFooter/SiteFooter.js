@@ -1,8 +1,8 @@
 import React from 'react';
 
-import Container from './Container';
+import Container from './../Container/Container';
 
-import './Footer.scss';
+import './SiteFooter.scss';
 
 const Footer = () => {
 	return (

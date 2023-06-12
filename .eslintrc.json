@@ -19,6 +19,7 @@
   "rules": {
     "no-console": "error",
     "no-alert": "error",
+    "prettier/prettier": "warn",
     "react/no-unknown-property": "off"
   }
 }

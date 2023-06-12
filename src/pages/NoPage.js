@@ -1,16 +1,17 @@
-import Container from '../components/Container';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import PageHeader from '../components/PageHeader';
+import SiteHeader from '../components/SiteHeader/SiteHeader';
+import SiteFooter from '../components/SiteFooter/SiteFooter';
+import PageHeader from '../components/PageHeader/PageHeader';
+import Container from '../components/Container/Container';
 
 const NoPage = () => {
 	return (
 		<div className="no-page">
+			<SiteHeader />
+			<PageHeader title="404 Error!!!" />
 			<Container>
-				<Header />
-				<PageHeader title="404 Error!!!" />
-				<Footer />
+				<p>The page you are looking for does not exist.</p>
 			</Container>
+			<SiteFooter />
 		</div>
 	);
 };

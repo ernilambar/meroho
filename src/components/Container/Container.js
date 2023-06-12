@@ -1,6 +1,8 @@
+import './Container.scss';
+
 const Container = (props) => {
 	return (
-		<div style={{ maxWidth: '1040px', width: '100%', margin: '0 auto' }}>
+		<div className="container">
 			{props.children}
 		</div>
 	);
