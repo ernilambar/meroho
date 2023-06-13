@@ -1,11 +1,13 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import {
-	faFacebook,
-	faTwitter,
+	faFacebookSquare,
+	faTwitterSquare,
 	faLinkedin,
 	faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+
+import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
 
 import './Social.scss';
 
@@ -13,23 +15,28 @@ const Social = () => {
 	const links = [
 		{
 			link: 'https://www.nilambar.net',
-			icon: faGlobe,
+			icon: faSquareUpRight,
+			color: '#ffffff',
 		},
 		{
 			link: 'https://twitter.com/nilambar',
-			icon: faTwitter,
+			icon: faTwitterSquare,
+			color: '#00aced',
 		},
 		{
 			link: 'https://www.facebook.com/nilambar.sharma',
-			icon: faFacebook,
+			icon: faFacebookSquare,
+			color: '#3b5998',
 		},
 		{
 			link: 'https://www.linkedin.com/in/nilambar/',
 			icon: faLinkedin,
+			color: '#0077b5',
 		},
 		{
 			link: 'https://www.instagram.com/ernilambar/',
 			icon: faInstagram,
+			color: '#C13584',
 		},
 	];
 
@@ -47,7 +54,8 @@ const Social = () => {
 							>
 								<FontAwesomeIcon
 									icon={item.icon}
-									style={{ color: '#ddd' }}
+									size="2x"
+									style={{ color: item.color }}
 								/>
 							</a>
 						</li>
