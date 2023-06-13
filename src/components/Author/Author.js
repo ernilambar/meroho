@@ -24,7 +24,7 @@ const Author = () => {
 							WordPress enthusiast, Freelancer and blogger. In
 							free time, I like to watch movies and listen music.
 						</p>
-				<Social />
+						<Social />
 					</div>
 				</div>
 			</Container>
