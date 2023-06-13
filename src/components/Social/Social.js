@@ -16,7 +16,7 @@ const Social = () => {
 		{
 			link: 'https://www.nilambar.net',
 			icon: faSquareUpRight,
-			color: '#ffffff',
+			color: '#333',
 		},
 		{
 			link: 'https://twitter.com/nilambar',
