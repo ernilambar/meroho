@@ -1,6 +1,9 @@
 .author {
 	.branding {
-		text-align: center;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 20px;
 
 		h1 {
 			text-transform: uppercase;
