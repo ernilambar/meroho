@@ -1,5 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import { faHome, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 import './Navigation.scss';
 
 const Navigation = () => {
@@ -14,7 +18,11 @@ const Navigation = () => {
 							navData.isActive ? 'active' : ''
 						}
 					>
-						Home
+						<FontAwesomeIcon
+							icon={faHome}
+							size={'lg'}
+							style={{ color: '#333' }}
+						/>
 					</NavLink>
 				</li>
 				<li>
@@ -25,7 +33,11 @@ const Navigation = () => {
 							navData.isActive ? 'active' : ''
 						}
 					>
-						Contact
+						<FontAwesomeIcon
+							icon={faEnvelope}
+							size={'lg'}
+							style={{ color: '#333' }}
+						/>
 					</NavLink>
 				</li>
 			</ul>
