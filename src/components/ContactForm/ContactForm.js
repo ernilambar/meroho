@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
 import './ContactForm.scss';
 
 const FORM_ENDPOINT =
@@ -6,17 +8,32 @@ const FORM_ENDPOINT =
 
 const ContactForm = () => {
 	const [status, setStatus] = useState('Submit');
-	const handleSubmit = async (e) => {
-		e.preventDefault();
 
-		const inputs = e.target.elements;
-		const data = {};
+	const formik = useFormik({
+		initialValues: {
+			name: '',
+			email: '',
+			message: '',
+		},
 
-		for (let i = 0; i < inputs.length; i++) {
-			if (inputs[i].name) {
-				data[inputs[i].name] = inputs[i].value;
-			}
-		}
+		validationSchema: Yup.object({
+			name: Yup.string()
+				.max(20, 'Name must be 20 characters or less.')
+				.required('Name is required'),
+			email: Yup.string()
+				.email('Invalid email address')
+				.required('Email is required'),
+			message: Yup.string().required('Message is required'),
+		}),
+
+		onSubmit: (values) => {
+			postContactForm(values);
+		},
+	});
+
+	const postContactForm = (data) => {
+		// console.log(data);
+		return;
 
 		fetch(FORM_ENDPOINT, {
 			method: 'POST',
@@ -28,17 +45,7 @@ const ContactForm = () => {
 		})
 			.then((response) => {
 				if (response.status === 422) {
-					Object.keys(data).forEach((key) => {
-						const el = document.createElement('input');
-						el.type = 'hidden';
-						el.name = key;
-						el.value = data[key];
-
-						e.target.appendChild(el);
-					});
-
-					e.target.submit();
-					throw new Error('Please finish the captcha challenge');
+					// challenge.
 				}
 
 				if (response.status !== 200) {
@@ -50,9 +57,10 @@ const ContactForm = () => {
 			.then(() => setStatus('Submitted successfully!'))
 			.catch((err) => setStatus(err.toString()));
 	};
+
 	return (
 		<form
-			onSubmit={handleSubmit}
+			onSubmit={formik.handleSubmit}
 			className="contact-form"
 			acceptCharset="UTF-8"
 		>
@@ -63,8 +71,15 @@ const ContactForm = () => {
 					name="name"
 					id="name"
 					placeholder="Enter full name"
-					required
+					onChange={formik.handleChange}
+					value={formik.values.name}
+					onBlur={formik.handleBlur}
 				/>
+				{formik.touched.name && formik.errors.name && (
+					<div className="contact-form-input-error">
+						{formik.errors.name}
+					</div>
+				)}
 			</div>
 			<div>
 				<label htmlFor="email">Email:</label>
@@ -73,8 +88,15 @@ const ContactForm = () => {
 					name="email"
 					id="email"
 					placeholder="Enter email"
-					required
+					onChange={formik.handleChange}
+					value={formik.values.email}
+					onBlur={formik.handleBlur}
 				/>
+				{formik.touched.email && formik.errors.email && (
+					<div className="contact-form-input-error">
+						{formik.errors.email}
+					</div>
+				)}
 			</div>
 			<div>
 				<label htmlFor="message">Message:</label>
@@ -82,8 +104,15 @@ const ContactForm = () => {
 					name="message"
 					id="message"
 					placeholder="Enter your message"
-					required
+					onChange={formik.handleChange}
+					value={formik.values.message}
+					onBlur={formik.handleBlur}
 				/>
+				{formik.touched.message && formik.errors.message && (
+					<div className="contact-form-input-error">
+						{formik.errors.message}
+					</div>
+				)}
 			</div>
 			<button type="submit">{status}</button>
 			<div
