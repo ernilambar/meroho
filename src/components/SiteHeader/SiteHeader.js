@@ -1,9 +1,6 @@
 import React from 'react';
-
 import Container from './../Container/Container';
-
 import Navigation from './../Navigation/Navigation';
-
 import './SiteHeader.scss';
 
 const SiteHeader = () => {

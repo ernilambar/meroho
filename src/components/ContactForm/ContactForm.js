@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-
 import './ContactForm.scss';
 
 const FORM_ENDPOINT =

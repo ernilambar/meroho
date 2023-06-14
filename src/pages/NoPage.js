@@ -1,3 +1,4 @@
+import React from 'react';
 import SiteHeader from '../components/SiteHeader/SiteHeader';
 import SiteFooter from '../components/SiteFooter/SiteFooter';
 import PageHeader from '../components/PageHeader/PageHeader';
