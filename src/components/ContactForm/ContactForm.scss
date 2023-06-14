@@ -3,7 +3,8 @@
 
 	label {
 		display: block;
-		margin-bottom: 10px;
+		font-weight: 600;
+		margin-top: 10px;
 	}
 
 	input[type="text"],
@@ -14,7 +15,7 @@
 		border: 1px solid #ccc;
 		border-radius: 4px;
 		box-sizing: border-box;
-		margin-bottom: 20px;
+		margin-top: 5px;
 	}
 
 	textarea {
@@ -28,9 +29,16 @@
 		border: none;
 		border-radius: 4px;
 		cursor: pointer;
+		margin-top: 20px;
 	}
 
 	button:hover {
 		background-color: #3e8e41;
+	}
+
+	.contact-form-input-error {
+		margin-top: 5px;
+		color: #ff0000;
+		font-size: 0.9em;
 	}
 }
