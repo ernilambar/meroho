@@ -1,5 +1,5 @@
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import Container from './../Container/Container';
 
 const PageHeader = (props) => {
@@ -10,6 +10,10 @@ const PageHeader = (props) => {
 			</Container>
 		</div>
 	);
+};
+
+PageHeader.propTypes = {
+	title: PropTypes.string,
 };
 
 export default PageHeader;

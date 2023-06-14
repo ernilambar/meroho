@@ -1,10 +1,7 @@
 import React from 'react';
-
 import Container from './../Container/Container';
 import Social from '../Social/Social';
-
 import './Author.scss';
-
 import avatar from './../../images/avatar.png';
 
 const Author = () => {

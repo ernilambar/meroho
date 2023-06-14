@@ -1,3 +1,5 @@
+import React from 'react';
+
 import SiteHeader from '../components/SiteHeader/SiteHeader';
 import SiteFooter from '../components/SiteFooter/SiteFooter';
 import Container from '../components/Container/Container';

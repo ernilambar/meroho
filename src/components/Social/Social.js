@@ -1,14 +1,12 @@
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import {
 	faFacebookSquare,
 	faTwitterSquare,
 	faLinkedin,
 	faInstagram,
 } from '@fortawesome/free-brands-svg-icons';
-
 import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
-
 import './Social.scss';
 
 const Social = () => {
