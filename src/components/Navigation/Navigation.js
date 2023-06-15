@@ -6,8 +6,8 @@ import './Navigation.scss';
 
 const Navigation = () => {
 	return (
-		<nav className="navigation">
-			<ul>
+		<nav className="ns-nav">
+			<ul className="ns-navigation">
 				<li>
 					<NavLink
 						to="/"
@@ -21,6 +21,7 @@ const Navigation = () => {
 							size={'lg'}
 							style={{ color: '#333' }}
 						/>
+						<span>home</span>
 					</NavLink>
 				</li>
 				<li>
@@ -36,6 +37,7 @@ const Navigation = () => {
 							size={'lg'}
 							style={{ color: '#333' }}
 						/>
+						<span>contact</span>
 					</NavLink>
 				</li>
 			</ul>

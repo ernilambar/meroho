@@ -3,7 +3,11 @@ import PropTypes from 'prop-types';
 import './Container.scss';
 
 const Container = (props) => {
-	return <div className="container">{props.children}</div>;
+	return (
+		<div className="container">
+			<div className="ns-inner">{props.children}</div>
+		</div>
+	);
 };
 
 Container.propTypes = {
