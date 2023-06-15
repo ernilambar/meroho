@@ -1,4 +1,4 @@
-.ns-content {
+.content {
 	grid-column: span 2;
 	position: relative;
 	padding-block: 24px;
@@ -16,24 +16,8 @@
 	}
 }
 
-.ns-content-wrap {
+.content-wrap {
 	height: 100%;
 	padding-inline: 24px;
 	overflow: auto;
-}
-
-.ns-content-title {
-	padding-block: 0 16px;
-	margin-block: 0 32px;
-	font-style: 20px;
-	font-weight: 600;
-	border-bottom: 1px solid #e3e3e3;
-
-	span {
-		color: #2a65e6;
-	}
-}
-
-.ns-content p {
-	font-size: 16px;
 }

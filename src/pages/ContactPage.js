@@ -2,19 +2,19 @@ import React from 'react';
 
 import SiteHeader from '../components/SiteHeader/SiteHeader';
 import Author from '../components/Author/Author';
-import About from '../components/About/About';
-import Container from './../components/Container/Container';
+import Contact from '../components/Contact/Contact';
+import Container from '../components/Container/Container';
 
-const Home = () => {
+const ContactPage = () => {
 	return (
-		<div className="home">
+		<div className="contact">
 			<Container>
 				<SiteHeader />
 				<Author />
-				<About />
+				<Contact />
 			</Container>
 		</div>
 	);
 };
 
-export default Home;
+export default ContactPage;
