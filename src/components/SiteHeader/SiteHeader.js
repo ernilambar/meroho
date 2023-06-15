@@ -4,7 +4,7 @@ import './SiteHeader.scss';
 
 const SiteHeader = () => {
 	return (
-		<header className="ns-header">
+		<header className="site-header">
 			<Navigation />
 		</header>
 	);
