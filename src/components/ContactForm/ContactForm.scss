@@ -7,11 +7,17 @@
 		margin-top: 10px;
 	}
 
+	input::placeholder,
+	textarea::placeholder {
+		font-family: "Poppins", sans-serif;
+	}
+
 	input[type="text"],
 	input[type="email"],
 	textarea {
 		padding: 10px;
 		width: 100%;
+		font-size: 14px;
 		border: 1px solid #ccc;
 		border-radius: 4px;
 		box-sizing: border-box;
