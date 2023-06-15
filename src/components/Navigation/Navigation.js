@@ -16,11 +16,7 @@ const Navigation = () => {
 							navData.isActive ? 'active' : ''
 						}
 					>
-						<FontAwesomeIcon
-							icon={faHome}
-							size={'lg'}
-							style={{ color: '#333' }}
-						/>
+						<FontAwesomeIcon icon={faHome} size={'lg'} />
 						<span>home</span>
 					</NavLink>
 				</li>
@@ -32,11 +28,7 @@ const Navigation = () => {
 							navData.isActive ? 'active' : ''
 						}
 					>
-						<FontAwesomeIcon
-							icon={faEnvelope}
-							size={'lg'}
-							style={{ color: '#333' }}
-						/>
+						<FontAwesomeIcon icon={faEnvelope} size={'lg'} />
 						<span>contact</span>
 					</NavLink>
 				</li>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Contact from './pages/Contact';
+import HomePage from './pages/HomePage';
+import ContactPage from './pages/ContactPage';
 import NoPage from './pages/NoPage';
 import './App.scss';
 
@@ -11,8 +11,8 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path="/">
-						<Route index element={<Home />} />
-						<Route path="contact" element={<Contact />} />
+						<Route index element={<HomePage />} />
+						<Route path="contact" element={<ContactPage />} />
 						<Route path="*" element={<NoPage />} />
 					</Route>
 				</Routes>

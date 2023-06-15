@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import Social from '../Social/Social';
 import './Author.scss';
 import avatar from './../../images/avatar.jpeg';
@@ -21,10 +22,14 @@ const Author = () => {
 			<div className="author-footer">
 				<ul className="author-footer-links">
 					<li>
-						<a href="https://asdf.com">download cv</a>
+						<NavLink to="/" exact="true">
+							Home
+						</NavLink>
 					</li>
 					<li>
-						<a href="https://asdf.com">contact me</a>
+						<NavLink to="/contact" exact="true">
+							Contact Me
+						</NavLink>
 					</li>
 				</ul>
 			</div>
