@@ -1,27 +1,25 @@
 import React from 'react';
 import Social from '../Social/Social';
 import './Author.scss';
-import avatar from './../../images/avatar.png';
+import avatar from './../../images/avatar.jpeg';
 
 const Author = () => {
 	return (
-		<div className="ns-author">
-			<div className="ns-author__content">
-				<div className="ns-author__avatar">
+		<div className="author">
+			<div className="author-content">
+				<div className="author-avatar">
 					<img src={avatar} alt="author" />
 				</div>
 				<div>
-					<div className="ns-author__details">
-						<h2 className="ns-author__name">Nilambar Sharma</h2>
-						<h4 className="ns-author__position">
-							Software Developer
-						</h4>
+					<div className="author-details">
+						<h2 className="author-name">Nilambar Sharma</h2>
+						<h4 className="author-position">Software Developer</h4>
 						<Social />
 					</div>
 				</div>
 			</div>
-			<div className="ns-author__footer">
-				<ul className="ns-author__footer-links">
+			<div className="author-footer">
+				<ul className="author-footer-links">
 					<li>
 						<a href="https://asdf.com">download cv</a>
 					</li>
