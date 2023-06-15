@@ -23,6 +23,7 @@
     "react/prop-types": "warn",
     "no-unreachable": "warn",
     "no-unused-vars": "warn",
+    "react-hooks/exhaustive-deps": "off",
     "react/no-unknown-property": "off"
   }
 }
