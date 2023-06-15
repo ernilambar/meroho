@@ -16,6 +16,7 @@
   },
   "prettier": "@wordpress/prettier-config",
   "dependencies": {
+    "@fontsource/poppins": "^5.0.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -48,6 +49,6 @@
     "lint:js": "eslint .",
     "lint:js:fix": "eslint . --fix",
     "lint:css:fix": "prettier --write 'src/**/*.{css,scss}'",
-		"fix": "npm run lint:js:fix && npm run lint:css:fix"
+    "fix": "npm run lint:js:fix && npm run lint:css:fix"
   }
 }
