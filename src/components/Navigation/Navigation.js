@@ -6,8 +6,8 @@ import './Navigation.scss';
 
 const Navigation = () => {
 	return (
-		<nav className="ns-nav">
-			<ul className="ns-navigation">
+		<nav className="navigation">
+			<ul>
 				<li>
 					<NavLink
 						to="/"

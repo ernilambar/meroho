@@ -10,10 +10,14 @@ const Author = () => {
 				<div className="ns-author__avatar">
 					<img src={avatar} alt="author" />
 				</div>
-				<div className="ns-author__details">
-					<h2 className="ns-author__name">Full Name</h2>
-					<h4 className="ns-author__position">Software Developer</h4>
-					<Social />
+				<div>
+					<div className="ns-author__details">
+						<h2 className="ns-author__name">Nilambar Sharma</h2>
+						<h4 className="ns-author__position">
+							Software Developer
+						</h4>
+						<Social />
+					</div>
 				</div>
 			</div>
 			<div className="ns-author__footer">

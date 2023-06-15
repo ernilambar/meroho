@@ -1,0 +1,39 @@
+.ns-content {
+	grid-column: span 2;
+	position: relative;
+	padding-block: 24px;
+	margin-block: 16px;
+	margin-inline-start: 80px;
+	border-radius: 4px;
+	background-color: #fff;
+	color: #434343;
+	overflow: auto;
+
+	@media (min-width: 1200px) {
+		grid-column: unset;
+		margin-inline-start: unset;
+		border-radius: 0 4px 4px 0;
+	}
+}
+
+.ns-content-wrap {
+	height: 100%;
+	padding-inline: 24px;
+	overflow: auto;
+}
+
+.ns-content-title {
+	padding-block: 0 16px;
+	margin-block: 0 32px;
+	font-style: 20px;
+	font-weight: 600;
+	border-bottom: 1px solid #e3e3e3;
+
+	span {
+		color: #2a65e6;
+	}
+}
+
+.ns-content p {
+	font-size: 16px;
+}
