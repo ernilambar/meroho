@@ -14,9 +14,13 @@
 }
 
 .container-inner {
-	display: grid;
-	grid-template-columns: 80px 1fr;
-	margin-block-start: 20px;
+	display: block;
+
+	@media (min-width: 768px) {
+		display: grid;
+		grid-template-columns: 80px 1fr;
+		margin-block-start: 20px;
+	}
 
 	@media (min-width: 1200px) {
 		grid-template-columns: 80px 1.2fr 2fr;
