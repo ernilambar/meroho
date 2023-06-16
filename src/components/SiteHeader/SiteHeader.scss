@@ -1,4 +1,9 @@
 .site-header {
-	width: 72px;
-	margin-right: 8px;
+	height: auto;
+
+	@media (min-width: 768px) {
+		width: 72px;
+		height: unset;
+		margin-right: 8px;
+	}
 }

@@ -1,9 +1,14 @@
 .navigation {
-	position: fixed;
-	top: 20px;
-	width: 72px;
+	display: inline-block;
 	border-radius: 4px;
 	background-color: #fff;
+	margin-block: 20px;
+
+	@media (min-width: 768px) {
+		position: fixed;
+		top: 20px;
+		width: 72px;
+	}
 
 	@media (min-width: 1200px) {
 		position: unset;
@@ -12,15 +17,26 @@
 	}
 
 	ul {
-		padding: 0;
-		margin: 0;
+		display: flex;
 		list-style: none;
+
+		@media (min-width: 768px) {
+			display: block;
+			padding: 0;
+			margin: 0;
+		}
 
 		li {
 			transition: all 0.25s linear;
+			min-width: 72px;
 
 			&:not(:last-child) {
-				border-bottom: 1px solid #e3e3e3;
+				border-right: 1px solid #e3e3e3;
+
+				@media (min-width: 768px) {
+					min-width: unset;
+					border-bottom: 1px solid #e3e3e3;
+				}
 			}
 		}
 
