@@ -1,5 +1,5 @@
 import React from 'react';
-import useDocumentTitle from '../components/DocumentTitle/useDocumentTitle';
+import useDocumentTitle from '../hooks/useDocumentTitle';
 
 const NoPage = () => {
 	useDocumentTitle('Page not found - Nilambar Sharma');

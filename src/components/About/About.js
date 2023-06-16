@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Content from '../Content/Content';
-import Box from '../Box/Box';
+import Content from '../../containers/Content/Content';
+import Box from '../../containers/Box/Box';
 
 const About = () => {
 	return (
