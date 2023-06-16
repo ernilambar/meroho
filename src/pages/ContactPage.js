@@ -3,8 +3,8 @@ import React from 'react';
 import SiteHeader from '../components/SiteHeader/SiteHeader';
 import Author from '../components/Author/Author';
 import Contact from '../components/Contact/Contact';
-import Container from '../components/Container/Container';
-import useDocumentTitle from '../components/DocumentTitle/useDocumentTitle';
+import Container from '../containers/Container/Container';
+import useDocumentTitle from '../hooks/useDocumentTitle';
 
 const ContactPage = () => {
 	useDocumentTitle('Contact - Nilambar Sharma');
