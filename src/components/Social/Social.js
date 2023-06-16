@@ -1,40 +1,35 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-	faFacebookSquare,
-	faTwitterSquare,
+	faGithub,
+	faTwitter,
 	faLinkedin,
-	faInstagram,
+	faStackOverflow,
 } from '@fortawesome/free-brands-svg-icons';
-import { faSquareUpRight } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import './Social.scss';
 
 const Social = () => {
 	const links = [
 		{
 			link: 'https://www.nilambar.net',
-			icon: faSquareUpRight,
-			color: '#333',
+			icon: faGlobe,
 		},
 		{
 			link: 'https://twitter.com/nilambar',
-			icon: faTwitterSquare,
-			color: '#00aced',
+			icon: faTwitter,
 		},
 		{
-			link: 'https://www.facebook.com/nilambar.sharma',
-			icon: faFacebookSquare,
-			color: '#3b5998',
+			link: 'https://github.com/ernilambar',
+			icon: faGithub,
 		},
 		{
 			link: 'https://www.linkedin.com/in/nilambar/',
 			icon: faLinkedin,
-			color: '#0077b5',
 		},
 		{
-			link: 'https://www.instagram.com/ernilambar/',
-			icon: faInstagram,
-			color: '#C13584',
+			link: 'https://stackoverflow.com/users/554694/nilambar-sharma',
+			icon: faStackOverflow,
 		},
 	];
 
@@ -52,8 +47,8 @@ const Social = () => {
 							>
 								<FontAwesomeIcon
 									icon={item.icon}
-									size="2x"
-									style={{ color: item.color }}
+									size="lg"
+									style={{ color: '#434343' }}
 								/>
 							</a>
 						</li>

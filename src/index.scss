@@ -47,8 +47,14 @@ body {
 a {
 	text-decoration: none;
 	color: #313131;
+
+	&:hover {
+		color: #2a65e6;
+	}
 }
 
-a:hover {
-	color: #2a65e6;
+ul,
+ol {
+	margin: 0;
+	padding: 0;
 }
