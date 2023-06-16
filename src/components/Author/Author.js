@@ -27,12 +27,12 @@ const Author = () => {
 				<div className="author-avatar">
 					<img src={avatar} alt="author" />
 				</div>
-				<div>
-					<div className="author-details">
-						<h2 className="author-name">Nilambar Sharma</h2>
-						<span className="author-position" ref={typerElement} />
-						<Social />
-					</div>
+			</div>
+			<div>
+				<div className="author-details">
+					<h2 className="author-name">Nilambar Sharma</h2>
+					<span className="author-position" ref={typerElement} />
+					<Social />
 				</div>
 			</div>
 			<div className="author-footer">
