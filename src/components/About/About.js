@@ -2,6 +2,7 @@ import React from 'react';
 
 import Content from '../../containers/Content/Content';
 import Box from '../../containers/Box/Box';
+import Services from '../Services/Services';
 
 const About = () => {
 	return (
@@ -15,6 +16,9 @@ const About = () => {
 						to watch movies and listen music.
 					</p>
 				</div>
+			</Box>
+			<Box heading="What" heading2="I Do">
+				<Services />
 			</Box>
 		</Content>
 	);
