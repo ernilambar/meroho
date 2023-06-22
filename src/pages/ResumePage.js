@@ -2,7 +2,7 @@ import React from 'react';
 
 import SiteHeader from '../components/SiteHeader/SiteHeader';
 import Author from '../components/Author/Author';
-import Articles from '../components/Articles/Articles';
+import Resume from '../components/Resume/Resume';
 import Container from '../containers/Container/Container';
 import useDocumentTitle from '../hooks/useDocumentTitle';
 
@@ -13,7 +13,7 @@ const ResumePage = () => {
 			<Container>
 				<SiteHeader />
 				<Author />
-				<Articles />
+				<Resume />
 			</Container>
 		</div>
 	);
