@@ -1,7 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {
+	faHome,
+	faEnvelope,
+	faPenClip,
+} from '@fortawesome/free-solid-svg-icons';
 import './Navigation.scss';
 
 const Navigation = () => {
@@ -18,6 +22,18 @@ const Navigation = () => {
 					>
 						<FontAwesomeIcon icon={faHome} size={'lg'} />
 						<span>home</span>
+					</NavLink>
+				</li>
+				<li>
+					<NavLink
+						to="/blog"
+						exact="true"
+						className={(navData) =>
+							navData.isActive ? 'active' : ''
+						}
+					>
+						<FontAwesomeIcon icon={faPenClip} size={'lg'} />
+						<span>blog</span>
 					</NavLink>
 				</li>
 				<li>
