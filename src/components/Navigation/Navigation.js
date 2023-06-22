@@ -5,49 +5,53 @@ import {
 	faHome,
 	faEnvelope,
 	faPenClip,
+	faFileLines,
 } from '@fortawesome/free-solid-svg-icons';
 import './Navigation.scss';
+
+const navItems = [
+	{
+		title: 'home',
+		to: '/',
+		icon: faHome,
+	},
+	{
+		title: 'resume',
+		to: '/resume',
+		icon: faFileLines,
+	},
+	{
+		title: 'blog',
+		to: '/blog',
+		icon: faPenClip,
+	},
+	{
+		title: 'contact',
+		to: '/contact',
+		icon: faEnvelope,
+	},
+];
 
 const Navigation = () => {
 	return (
 		<nav className="navigation">
 			<ul>
-				<li>
-					<NavLink
-						to="/"
-						exact="true"
-						className={(navData) =>
-							navData.isActive ? 'active' : ''
-						}
-					>
-						<FontAwesomeIcon icon={faHome} size={'lg'} />
-						<span>home</span>
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						to="/blog"
-						exact="true"
-						className={(navData) =>
-							navData.isActive ? 'active' : ''
-						}
-					>
-						<FontAwesomeIcon icon={faPenClip} size={'lg'} />
-						<span>blog</span>
-					</NavLink>
-				</li>
-				<li>
-					<NavLink
-						to="/contact"
-						exact="true"
-						className={(navData) =>
-							navData.isActive ? 'active' : ''
-						}
-					>
-						<FontAwesomeIcon icon={faEnvelope} size={'lg'} />
-						<span>contact</span>
-					</NavLink>
-				</li>
+				{navItems.map((item) => {
+					return (
+						<li key={item.title}>
+							<NavLink
+								to={item.to}
+								exact="true"
+								className={(navData) =>
+									navData.isActive ? 'active' : ''
+								}
+							>
+								<FontAwesomeIcon icon={item.icon} size={'lg'} />
+								<span>{item.title}</span>
+							</NavLink>
+						</li>
+					);
+				})}
 			</ul>
 		</nav>
 	);
