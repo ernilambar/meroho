@@ -7,9 +7,9 @@ import Container from '../containers/Container/Container';
 import useDocumentTitle from '../hooks/useDocumentTitle';
 
 const BlogPage = () => {
-	useDocumentTitle('Contact - Nilambar Sharma');
+	useDocumentTitle('Blog - Nilambar Sharma');
 	return (
-		<div className="contact">
+		<div className="blog">
 			<Container>
 				<SiteHeader />
 				<Author />
