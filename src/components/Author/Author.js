@@ -31,7 +31,9 @@ const Author = () => {
 			<div>
 				<div className="author-details">
 					<h2 className="author-name">Nilambar Sharma</h2>
-					<span className="author-position" ref={typerElement} />
+					<div className="author-tagline">
+						<span className="author-position" ref={typerElement} />
+					</div>
 					<Social />
 				</div>
 			</div>
