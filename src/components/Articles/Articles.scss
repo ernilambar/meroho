@@ -1,0 +1,14 @@
+.articles {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	list-style-position: inside;
+
+	a {
+		color: #2a65e6;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
